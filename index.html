@@ -31,10 +31,15 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="navbar-option about-nav"><a href="#about-section" data-toggle="collapse" data-target="#myNavbar">About</a></li>
-          <li class="navbar-option web-dev-nav"><a href="#web-dev-section" data-toggle="collapse" data-target="#myNavbar">Web Dev</a></li>
-          <li class="navbar-option data-sci-nav"><a href="#data-sci-section" data-toggle="collapse" data-target="#myNavbar">Data Sci</a></li>
-          <li class="navbar-option contact-nav"><a href="#contact-section" data-toggle="collapse" data-target="#myNavbar">Contact</a></li>
+          <!-- toggling of mobile menu creates flickering in desktop version, so we have two versions by screen size: -->
+          <li class="navbar-option about-nav"><a href="#about-section" class="hidden-xs">About</a></li>
+          <li class="navbar-option about-nav"><a href="#about-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">About</a></li>
+          <li class="navbar-option web-dev-nav"><a href="#web-dev-section" class="hidden-xs">Web Dev</a></li>
+          <li class="navbar-option web-dev-nav"><a href="#web-dev-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Web Dev</a></li>
+          <li class="navbar-option data-sci-nav"><a href="#data-sci-section" class="hidden-xs">Data Sci</a></li>
+          <li class="navbar-option data-sci-nav"><a href="#data-sci-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Data Sci</a></li>
+          <li class="navbar-option contact-nav"><a href="#contact-section" class="hidden-xs">Contact</a></li>
+          <li class="navbar-option contact-nav"><a href="#contact-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Contact</a></li>
         </ul>
       </div>
     </div>
