@@ -47,7 +47,7 @@ a {
 
 .section-container {
   padding-top: 200px; 
-  width: 970px; 
+  width: 100%; 
   margin: 0 auto;  
   text-align: center;
 }
