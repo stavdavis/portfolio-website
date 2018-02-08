@@ -14,3 +14,7 @@ $(".data-sci-nav").click(function () {
 $(".contact-nav").click(function () {
     $("#contact-section").velocity("scroll", 1000);
 });
+
+$(".navbar-brand").click(function () {
+    $("#pagetop").velocity("scroll", 1000);
+});
