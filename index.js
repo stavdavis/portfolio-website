@@ -18,3 +18,7 @@ $(".contact-nav").click(function () {
 $(".navbar-brand").click(function () {
     $("#pagetop").velocity("scroll", 1000);
 });
+
+// $(".navbar-option").on('click', function(){
+//     $(".navbar-toggle").click() //bootstrap 3.x by Richard
+// });
