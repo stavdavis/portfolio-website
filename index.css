@@ -141,15 +141,29 @@ nav {
   width: 50%;
 }
 
+.button-line {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*from bootstrap*/
+.btn { 
+  margin-left: 14%;
+  margin-right: 14%;
+  width: 65px !important;
+}
+
 .image {
   display: block;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   border: 1px solid black;
   padding: 5px;
 }
 
 .app-sample {
+  display: inline-block;
+  width: 30%;
   border-bottom: 1px solid lightgray;
+  margin-right: 3%;
+  text-align: justify;
 }

@@ -36,10 +36,8 @@
           <!-- toggling of mobile menu creates flickering in desktop version, so we have two versions by screen size: -->
           <li class="navbar-option about-nav"><a href="#about-section" class="hidden-xs">About</a></li>
           <li class="navbar-option about-nav"><a href="#about-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">About</a></li>
-          <li class="navbar-option web-dev-nav"><a href="#web-dev-section" class="hidden-xs">Web Dev</a></li>
-          <li class="navbar-option web-dev-nav"><a href="#web-dev-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Web Dev</a></li>
-          <li class="navbar-option data-sci-nav"><a href="#data-sci-section" class="hidden-xs">Data Sci</a></li>
-          <li class="navbar-option data-sci-nav"><a href="#data-sci-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Data Sci</a></li>
+          <li class="navbar-option portfolio-nav"><a href="#portfolio-section" class="hidden-xs">Work Samples</a></li>
+          <li class="navbar-option portfolio-nav"><a href="#portfolio-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Work Samples</a></li>
           <li class="navbar-option contact-nav"><a href="#contact-section" class="hidden-xs">Contact</a></li>
           <li class="navbar-option contact-nav"><a href="#contact-section" class="visible-xs" data-toggle="collapse" data-target="#myNavbar">Contact</a></li>
         </ul>
@@ -50,9 +48,9 @@
   <main class="main-container" id="pagetop">
 
     <div class="corpster-container" id="corpster-section">
-      <h1><b>Corpsterd</b> <span class="italic-small">noun, slang</span></h1>
-      <h2>[korp-ster-d]</h2>
-      <p>A corporate hipster + nerd. A person who gets <span class="highlighted">design</span>, <span class="highlighted">data</span> and <span class="highlighted">business</span>, but defies the stigmas of all three.</p>
+      <h1><b>Bizignerd</b> <span class="italic-small">noun, slang</span></h1>
+      <h2>[biˈzīn-ərd]</h2>
+      <p>Business + Design + Nerd. A person who gets <span class="highlighted">design thinking</span>, <span class="highlighted">data science</span> and <span class="highlighted">business logic</span>, but defies the stigmas of all three.</p>
     </div>
 
     <div class="section-container" id="about-section">
@@ -82,14 +80,48 @@
       <div class="app-sample">
         <h2>PolitiSmart</h2>
         <p>
-          An intelligent lawmaker matchfinder.<br>
-          <a href="https://politismart.netlify.com/"><img class="image" src="./images/politismart.png"></a><br>
-          <b>Frontend:</b> ReactJS, Redux; includes JWT login handling, AJAX API calls and CI testing); Deployed on Netlify<br>
-          <b>Backend:</b> NodeJS with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo)<br>
+          Matches lawmakers to users political profile and helps optimize political contributions
+          <div class="button-line">
+            <!-- using bootstrap's button -->
+            <a href="https://politismart.netlify.com" class="btn btn-default" role="button" target="_blank">Live app</a>
+            <a href="https://github.com/stavdavis/politismart" class="btn btn-default" role="button" target="_blank">Repo</a>
+          </div>
+          <a href="https://politismart.netlify.com" target="_blank"><img class="image" src="./images/politismart.png"></a><br>
+          <b>Frontend:</b> ReactJS, Redux, HTML5, CSS3; includes JWT login handling, AJAX API calls and CI testing; Deployed on Netlify.<br>
+          <b>Backend:</b> NodeJS with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo).
+        </p>
+      </div>
+
+      <div class="app-sample">
+        <h2>Pediatrician App</h2>
+        <p>
+          A patient data management platform for pediatricians and parents
+          <div class="button-line">
+            <!-- using bootstrap's button -->
+            <a href="https://pediatrician-app.herokuapp.com" class="btn btn-default" role="button" target="_blank">Live app</a>
+            <a href="https://github.com/stavdavis/pediatrician-app" class="btn btn-default" role="button" target="_blank">Repo</a>
+          </div>
+          <a href="https://pediatrician-app.herokuapp.com" target="_blank"><img class="image" src="./images/pediatrician-app.png"></a><br>
+          <b>Frontend:</b> jQuery, HTML5, CSS3; includes JWT login handling, AJAX API calls and CI testing; Deployed on Heroku.<br>
+          <b>Backend:</b> NodeJS with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo).
+        </p>
+      </div>
+
+      <div class="app-sample">
+        <h2>Stock dividends API hack</h2>
+        <p>
+          A dividend attractiveness analysis tool, using real time stock market quotes
+          <div class="button-line">
+            <!-- using bootstrap's button -->
+            <a href="https://stavdavis.github.io/dividends-api-app" class="btn btn-default" role="button" target="_blank">Live app</a> 
+            <a href="https://github.com/stavdavis/dividends-api-app" class="btn btn-default" role="button" target="_blank">Repo</a>
+          </div>
+          <a href="https://stavdavis.github.io/dividends-api-app" target="_blank"><img class="image" src="./images/dividends-hack.png"></a><br>
+          <b>Frontend:</b> ReactJS, Redux, HTML5, CSS3; includes JWT login handling, AJAX API calls and CI testing); Deployed on Netlify.<br>
+          <b>Backend:</b> NodeJS with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo).
         </p>
       </div>
     </div>
-
 
     <div class="section-container" id="contact-section">
       <h1>CONTACT SECTION</h1>
