@@ -1,9 +1,24 @@
 body { 
-  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif !important;
-  margin-top: 0px;
 }
 
+.main-container {
+  padding-top: 150px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .main-container {
+    width: 95%; 
+  }
+}
+
+
+/*navbar*********************************************/
 nav {
   position: fixed !important;
   top: 0;
@@ -39,19 +54,102 @@ nav {
   padding-top: 10px !important;
 }
 
-a {
+.navbar-option a {
   font-size: 20px !important;
   color: black !important;
   padding-bottom: 5px !important;
 }
+/********************************************************/
 
-.section-container {
-  padding-top: 200px; 
-  width: 100%; 
-  margin: 0 auto;  
-  text-align: center;
+/*Top box - corpster definition**************************/
+.corpster-container {
+  display: block;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
 }
 
-#contact-section {
-  padding-bottom: 500px;
+@media screen and (max-width: 767px) {
+  .corpster-container {
+    width: 100%; 
+    padding-top: 100px;
+  }
+}
+
+.corpster-container h1 {
+  margin-bottom: 0px;
+}
+
+.corpster-container .italic-small {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.corpster-container .highlighted {
+  background-color: yellow;
+}
+
+.corpster-container h2 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.corpster-container p {
+  font-size: 15px;
+}
+/***************************************************/
+
+.section-container {
+  padding-top: 100px;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .section-container {
+    width: 100%; 
+  }
+}
+
+.section-container h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.section-container h2 {
+  font-size: 28px;
+}
+
+.section-container h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-container p {
+  font-size: 21px;
+}
+
+.about-left, .about-right {
+  display: inline-block;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.app-sample {
+  border-bottom: 1px solid lightgray;
 }
