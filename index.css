@@ -4,7 +4,7 @@ body {
 
 .main-container {
   padding-top: 150px;
-  width: 70%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -13,7 +13,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .main-container {
-    width: 95%; 
+    width: 100%; 
   }
 }
 
@@ -45,9 +45,15 @@ nav {
 
 .navbar-brand {
   font-size: 40px !important;
-  font-weight: bold;
+  font-weight: none;
   color: black !important;
   padding-left: 15px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    font-size: 25px !important;
+  }
 }
 
 .navbar-option {
@@ -68,18 +74,11 @@ nav {
 
 .corpster-container {
   display: block;
-  width: 500px;
+  width: 33%;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto Slab', serif;
   text-align: left;
-}
-
-@media screen and (max-width: 767px) {
-  .corpster-container {
-    width: 100%; 
-    padding-top: 100px;
-  }
 }
 
 .corpster-container h1 {
@@ -88,7 +87,7 @@ nav {
 
 .corpster-container .italic-small {
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .corpster-container .highlighted {
@@ -101,8 +100,33 @@ nav {
 }
 
 .corpster-container p {
-  font-size: 15px;
+  font-size: 16px;
 }
+
+@media screen and (max-width: 767px) {
+  .corpster-container {
+    width: 100%; 
+    padding-top: 100px;
+    text-align: justify;
+  }
+
+  .corpster-container h1 {
+    font-size: 28px;
+  }
+
+  .corpster-container .italic-small {
+    font-size: 16px;
+  }
+
+  .corpster-container h2 {
+    font-size: 17px;
+  }
+
+  .corpster-container p {
+    font-size: 13px;
+  }
+}
+
 /***************************************************/
 
 .section-container {
@@ -140,14 +164,36 @@ nav {
   font-size: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .section-container h1 {
+    font-size: 28px;
+  }
+
+  .section-container h2 {
+    font-size: 20px;
+  }
+
+  .section-container h3 {
+    font-size: 16px;
+  }
+
+  .section-container p {
+    font-size: 13px;
+  }  
+}
+
+
 .about-left, .about-right {
-  display: inline-block;
-  width: 50%;
+  display: block;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto
 }
 
 @media screen and (max-width: 767px) {
   .about-left, .about-right {
     width: 100%; 
+;
   }
 }
 
@@ -172,8 +218,8 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-  .app-sample {
-    width: 100%; 
+  .image {
+    width: 80%; 
     margin-left: auto;
     margin-right: auto;
   }
@@ -194,4 +240,24 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#contact-section {
+  width: 33%;
+  padding-bottom: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  #contact-section {
+    width: 100%;
+  }
+}
+
+.email-link, .github-link .linkedin-link {
+    text-align: left;
+}
+
+.email-logo, .github-logo, .linkedin-logo {
+  width: 75px;
+  margin-top: 10px;
 }

@@ -15,6 +15,13 @@ $(".contact-nav").click(function () {
     $("#contact-section").velocity("scroll", 1000);
 });
 
-// $(".navbar-option").on('click', function(){
-//     $(".navbar-toggle").click() //bootstrap 3.x by Richard
-// });
+//I don't want my email in plain html on the web...
+emailUserFirst = "stav";
+emailUserLast = "davis";
+emailProvider = "gmail";
+fullAddress = `${emailUserFirst}.${emailUserLast}@${emailProvider}.com`;
+
+
+$(".email-link").html(
+	`<a href='mailto:${fullAddress}'  target="_blank"><img class="email-logo" src="./images/email-logo.JPG" alt="Email icon"></a>`
+);
