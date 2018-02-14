@@ -3,7 +3,7 @@ body {
 }
 
 .main-container {
-  padding-top: 150px;
+  padding-top: 75px;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -243,6 +243,7 @@ nav {
 }
 
 #contact-section {
+  padding-top: 10px !important; /*this is overridden by the section class, so need "!important"*/ 
   width: 33%;
   padding-bottom: 300px;
 }
@@ -253,8 +254,10 @@ nav {
   }
 }
 
-.email-link, .github-link .linkedin-link {
-    text-align: left;
+.email-link, .github-link, .linkedin-link {
+  display: inline-block;
+  text-align: center;
+  width: 33.3%;
 }
 
 .email-logo, .github-logo, .linkedin-logo {
