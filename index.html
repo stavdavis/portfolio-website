@@ -8,10 +8,12 @@
   <meta name="author" content="Stav Davis">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- fonts: -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">  <!-- css reset: -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <!-- css reset: -->
   <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+
   <!-- styles: -->
   <link rel="stylesheet" type="text/css" href="./index.css"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
@@ -78,7 +80,7 @@
     <div class="section-container" id="portfolio-section">
       <h1>Work Samples</h1>
       <div class="app-sample">
-        <h2><b>PolitiSmart</b></h2>
+        <h2><b><span class="highlighted">PolitiSmart</span></b></h2>
         <p>
           Optimized lawmaker search to match the user's political profile<br>
         </p>
@@ -88,14 +90,14 @@
           <a href="https://github.com/stavdavis/politismart" class="btn btn-default" role="button" target="_blank">Repo</a>
         </div>
         <p>
-          <a href="https://politismart.netlify.com" target="_blank"><img class="image" src="./images/politismart.png" alt="PolitiSmart app screenshot"></a>
+          <a href="https://politismart.netlify.com" target="_blank"><img class="image" src="./images/politismart-gif3.gif" alt="PolitiSmart app screenshot"></a>
           <b>Frontend:</b> React.js, Redux, HTML5, CSS3; includes JWT login handling, AJAX API calls, CI testing (Travis & Enzyme); Deployed on Netlify.<br><br>
           <b>Backend:</b> Node.js with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo).
         </p>
       </div>
 
       <div class="app-sample">
-        <h2><b>Pediatrician App</b></h2>
+        <h2><b><span class="highlighted">Pediatrician App</span></b></h2>
         <p>
           A patient data management platform for parents and pediatricians<br>
         </p>
@@ -105,14 +107,14 @@
           <a href="https://github.com/stavdavis/pediatrician-app" class="btn btn-default" role="button" target="_blank">Repo</a>
         </div>
         <p>
-          <a href="https://pediatrician-app.herokuapp.com" target="_blank"><img class="image" src="./images/pediatrician-app.png" alt="Pediatrician app screenshot"></a>
+          <a href="https://pediatrician-app.herokuapp.com" target="_blank"><img class="image" src="./images/pediatrician-app-gif.gif" alt="Pediatrician app screenshot"></a>
           <b>Frontend:</b> jQuery, HTML5, CSS3; includes JWT login handling, AJAX API calls and CI testing (Travis & Enzyme); Deployed on Heroku.<br><br>
           <b>Backend:</b> Node.js with Express; includes JWT user authentication, multiple RESTful API endpoints; Deployed on Heroku, with mLab DB (mongo).
         </p>
       </div>
 
       <div class="app-sample">
-        <h2><b>Stock dividends API hack</b></h2>
+        <h2><b><span class="highlighted">Stock dividends API hack</span></b></h2>
         <p>
           A dividend attractiveness analysis tool, using real time stock market quotes<br>
         </p>
@@ -122,10 +124,27 @@
           <a href="https://github.com/stavdavis/dividends-api-app" class="btn btn-default" role="button" target="_blank">Repo</a>
         </div>
         <p>
-          <a href="https://stavdavis.github.io/dividends-api-app" target="_blank"><img class="image" src="./images/dividends-hack.png" alt="Dividends app screenshot"></a>
+          <a href="https://stavdavis.github.io/dividends-api-app" target="_blank"><img class="image" src="./images/dividends-gif.gif" alt="Dividends app screenshot"></a>
           <b>Frontend:</b> JavaScript, jQuery, HTML5, CSS3<br><br><br><br><br><br><br><br>
         </p>
       </div>
+
+      <div class="app-sample">
+        <h2><b><span class="highlighted">Pile Of Shapes</span></b></h2>
+        <p>
+          A silly way to learn pure JS animation, collision detection and canvas manipulation<br>
+        </p>
+        <div class="button-line">
+          <!-- using bootstrap's button -->
+          <a href="https://pile-of-shapes.netlify.com/" class="btn btn-default" role="button" target="_blank">Live app</a> 
+          <a href="https://github.com/stavdavis/pile-of-shapes" class="btn btn-default" role="button" target="_blank">Repo</a>
+        </div>
+        <p>
+          <a href="https://pile-of-shapes.netlify.com/" target="_blank"><img class="image" src="./images/pile-of-shapes.gif" alt="Pile-of-Shapes app screenshot gif"></a>
+          <b>Frontend:</b> Only pure vanilla JavaScript (not even jQuerry) with barebones HTML5 and CSS3<br><br><br><br><br><br><br>
+        </p>
+      </div>
+
     </div>
 
     <div class="section-container" id="contact-section">
