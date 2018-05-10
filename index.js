@@ -25,3 +25,8 @@ fullAddress = `${emailUserFirst}.${emailUserLast}@${emailProvider}.com`;
 $(".email-link").html(
 	`<a href='mailto:${fullAddress}'  target="_blank"><img class="email-logo" src="./images/email-logo.JPG" alt="Email icon"></a>`
 );
+
+//A function to set the height of the images as a % of their width
+$(function() {
+    $('.image').css('height', 1.778 * $('.image').width());
+});
